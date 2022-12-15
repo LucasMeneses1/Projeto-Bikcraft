@@ -1,0 +1,77 @@
+.cabecalho-bg {
+  background-color: #000000;
+}
+
+.cabecalho {
+  background: #000000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  /* gap para definir a menor distancia entre os itens para realizar a quebra de linha */
+  gap: 20px;
+  align-items: center;
+}
+
+.cabecalho-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* padding aplicado para aumentar a área de contato do link (ajuda na acessibilidade no mobile) */
+.cabecalho-menu a {
+  /* display inline-block utilizado para nao sobrepor os paddings dos links do menu quando eles se sobrepuserem (a display inline por padrão), mas não pareceu necessário */
+  /* display: inline-block; */
+  color: #ffffff;
+  padding: 16px 0;
+  position: relative;
+}
+
+.cabecalho-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #ffffff;
+  margin-top: 4px;
+  transition: 0.3s;
+  /* é preciso tirar osse elemento do fluxo para ele não interferir no align dos itens da nav */
+  position: absolute;
+}
+
+.cabecalho-menu a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .cabecalho-menu {
+    gap: 20px;
+  }
+
+  .cabecalho-menu a {
+    background-color: #111111;
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+
+  .cabecalho-menu a:hover {
+    background-color: #2e2e2e;
+  }
+
+  .cabecalho-menu a::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .cabecalho-menu {
+    gap: 12px;
+  }
+
+  .cabecalho-menu a {
+    background-color: #111111;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+  }
+}
