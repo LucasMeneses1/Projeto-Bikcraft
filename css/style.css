@@ -1,2 +1,7 @@
-@import "./global.css";
-@import "./header.css";
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./home/introducao.css";
+@import "./utilitarios/componentes.css";
+@import "./utilitarios/cores.css";
+@import "./utilitarios/tipografia.css";
+@import "./home/bicicletas.css";
