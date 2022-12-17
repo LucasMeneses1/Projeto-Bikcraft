@@ -1,0 +1,60 @@
+.seguros-bg {
+  background: var(--cor-11);
+  color: var(--cor-0);
+  padding: 60px 0 60px 0;
+}
+
+.seguros-bg h2 {
+  margin-bottom: 40px;
+}
+
+.seguros {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.seguro-classe {
+  background: var(--cor-12);
+  padding: 32px 32px 32px 60px;
+  height: max-content;
+  border-radius: 4px;
+}
+
+.seguro-classe a {
+  margin-top: 32px;
+}
+
+.seguro-tipo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.seguro-tipo div {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.seguro-vantagens li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.seguro-vantagens li + li {
+  margin-top: 20px;
+}
+
+.seguro-vantagens img {
+  position: absolute;
+  left: -20px;
+}
+
+@media (max-width: 800px) {
+  .seguros {
+    grid-template-columns: 1fr;
+  }
+}

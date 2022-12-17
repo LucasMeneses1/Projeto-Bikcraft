@@ -1,5 +1,4 @@
 .parceiros {
-  margin-bottom: 120px;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
@@ -7,6 +6,7 @@
 
 .parceiros h2 {
   margin-bottom: 60px;
+  padding-left: 120px;
 }
 
 .parceiros-lista {
@@ -43,10 +43,15 @@
 
   .parceiros h2 {
     margin-bottom: 20px;
+    padding-left: 0px;
   }
 
   .parceiros ul {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .parceiro {
+    padding: 32px 54px;
   }
 
   .parceiro:nth-child(n + 3) {
