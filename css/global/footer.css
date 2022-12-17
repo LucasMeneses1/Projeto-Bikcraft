@@ -1,0 +1,78 @@
+.rodape-bg {
+  background: var(--cor-12);
+  padding: 60px 0;
+}
+
+.rodape {
+  display: grid;
+  grid-template-columns: 3fr 5fr 4fr;
+  gap: 40px;
+}
+
+.rodape a:hover {
+  color: var(--cor-0);
+}
+
+.contatos {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.contatos h3,
+.informacoes h3 {
+  margin-bottom: 40px;
+}
+
+.contatos img {
+  margin-right: 24px;
+}
+
+.enderecos,
+.informacoes div {
+  display: flex;
+  flex-direction: column;
+}
+
+.enderecos {
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.barra:after {
+  content: "";
+  display: block;
+  max-width: 360px;
+  height: 2px;
+  background: var(--cor-11);
+  margin-top: 16px;
+}
+
+.informacoes div a {
+  margin-bottom: 16px;
+}
+
+.copy {
+  margin-top: 40px;
+  grid-column: 1/-1;
+}
+
+@media (max-width: 800px) {
+  .logo {
+    display: none;
+  }
+
+  .rodape {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .rodape {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .copy {
+    margin: 0;
+  }
+}

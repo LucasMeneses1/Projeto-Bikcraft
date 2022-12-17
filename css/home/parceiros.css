@@ -15,11 +15,11 @@
 }
 
 .parceiro {
-  padding: 44px 108px;
   border-left: 2px solid var(--cor-2);
 }
 
 .parceiros-lista li {
+  padding: 32px;
   display: flex;
 }
 
