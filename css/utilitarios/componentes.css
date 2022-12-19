@@ -36,8 +36,10 @@
   text-transform: uppercase;
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
   max-width: max-content;
+  height: max-content;
   border: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .btn:hover {

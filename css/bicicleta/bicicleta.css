@@ -1,0 +1,131 @@
+.bicicleta-bg {
+  background: var(--cor-11);
+}
+
+.bicicleta-principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-self: start;
+  gap: 20px;
+}
+
+.galeria-sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.infos > p {
+  margin-bottom: 32px;
+}
+
+.comprar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  gap: 12px;
+}
+
+.comprar span {
+  display: inline-block;
+}
+
+.comprar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.comprar ul li {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  background: var(--cor-12);
+  border-radius: 4px;
+}
+
+.comprar ul li img {
+  margin-right: 8px;
+}
+
+.bicicleta-infos {
+  margin-bottom: 32px;
+}
+
+.bicicleta-infos > p {
+  margin-bottom: 12px;
+}
+
+.bicicleta-infos ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 20px;
+  background: var(--cor-12);
+  padding: 32px 40px;
+  border-radius: 4px;
+}
+
+.bicicleta-infos ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ficha-tecnica {
+  margin-bottom: 60px;
+}
+
+.ficha-tecnica > p {
+  margin-bottom: 12px;
+}
+
+.ficha-tecnica ul {
+  padding: 32px 40px;
+  background: var(--cor-12);
+  border-radius: 4px;
+}
+
+.ficha-tecnica ul li {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.ficha-tecnica ul li + li {
+  margin-top: 12px;
+}
+
+.ficha-tecnica ul li + li::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: var(--cor-11);
+  display: block;
+  position: absolute;
+  top: -6px;
+}
+
+@media (max-width: 920px) {
+  .galeria-sec {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .galeria {
+    display: none;
+  }
+
+  .bicicleta-principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
