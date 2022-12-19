@@ -49,6 +49,7 @@
   padding: 4px 8px;
   background: var(--cor-12);
   border-radius: 4px;
+  max-width: max-content;
 }
 
 .comprar ul li img {
@@ -59,8 +60,11 @@
   margin-bottom: 32px;
 }
 
-.bicicleta-infos > p {
+.bicicleta-infos > p,
+.ficha-tecnica > p {
   margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.015rem;
 }
 
 .bicicleta-infos ul {
@@ -68,7 +72,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px 20px;
   background: var(--cor-12);
-  padding: 32px 40px;
+  padding: 32px;
   border-radius: 4px;
 }
 
@@ -80,10 +84,6 @@
 
 .ficha-tecnica {
   margin-bottom: 60px;
-}
-
-.ficha-tecnica > p {
-  margin-bottom: 12px;
 }
 
 .ficha-tecnica ul {
@@ -127,5 +127,16 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .bicicleta-infos ul {
+    grid-template-columns: 1fr;
+  }
+
+  .comprar {
+    flex-direction: column;
+    align-items: start;
   }
 }

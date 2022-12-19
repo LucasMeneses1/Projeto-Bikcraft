@@ -24,6 +24,7 @@
 }
 
 .contatos img {
+  display: inline-block;
   margin-right: 24px;
 }
 
