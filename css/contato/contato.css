@@ -1,0 +1,93 @@
+.contato-bg {
+  background: linear-gradient(to bottom, var(--cor-11) 50%, var(--cor-0) 0%);
+}
+
+#contato .contato-bg .container {
+  max-width: 1160px;
+}
+.contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-left: 0;
+  padding-right: 0;
+  background: linear-gradient(to right, var(--cor-12) 41.67%, var(--cor-0) 0%);
+  border-radius: 4px;
+}
+
+.contato-enderecos,
+.contato-formulario {
+  padding: 60px;
+}
+
+.contato-enderecos a {
+  display: block;
+  width: max-content;
+}
+
+.contato-enderecos > p {
+  margin-bottom: 60px;
+}
+
+.contato-enderecos li + li {
+  margin-top: 32px;
+}
+
+.contato-enderecos ul {
+  margin-bottom: 60px;
+}
+
+.contato-enderecos ul li,
+.contato-enderecos ul li address {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  align-items: center;
+}
+
+.contato-enderecos ul li p,
+.contato-enderecos ul li a {
+  grid-column: 2;
+}
+
+.contato-enderecos ul li img {
+  grid-column: 1;
+}
+
+.contato-redes {
+  display: flex;
+  gap: 32px;
+  padding-left: 28px;
+}
+
+.contato-formulario form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contato-formulario label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contato-formulario input {
+  width: 100%;
+  height: 48px;
+  outline: none;
+}
+
+.contato-formulario textarea {
+  width: 100%;
+  height: 160px;
+  outline: none;
+}
+
+.contato-formulario input::placeholder,
+.contato-formulario textarea::placeholder {
+  padding-left: 8px;
+}
+
+.contato-formulario form div:nth-child(3),
+.contato-formulario form div:nth-child(4) {
+  grid-column: 1/-1;
+}
