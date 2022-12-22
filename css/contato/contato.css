@@ -2,6 +2,10 @@
   background: linear-gradient(to bottom, var(--cor-11) 50%, var(--cor-1) 0%);
 }
 
+.titulo-bg-2 div {
+  margin-top: 60px;
+}
+
 #contato .contato-bg .container {
   max-width: 1160px;
 }
@@ -19,12 +23,14 @@
 }
 
 .contato-enderecos {
-  background: var(--cor-12);
+  background: var(--cor-12) url("../../img/dec/bottom-left.svg") no-repeat
+    bottom 20px left 20px;
   border-radius: 4px 0 0 4px;
 }
 
 .contato-formulario {
-  background: var(--cor-0);
+  background: var(--cor-0) url("../../img/dec/bottom-right.svg") no-repeat
+    bottom 20px right 20px;
   border-radius: 0 4px 4px 0;
 }
 
@@ -133,6 +139,7 @@
 
   .contato-enderecos {
     border-radius: 4px 4px 0 0;
+    background: var(--cor-12);
   }
 
   .contato-formulario {

@@ -16,6 +16,8 @@
 .depoimento-texto {
   padding: 80px;
   align-self: end;
+  background: url("../../img/dec/bottom-right-p.svg") no-repeat bottom 40px
+    right 40px;
 }
 
 .depoimento-texto blockquote {
