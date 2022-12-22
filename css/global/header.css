@@ -39,7 +39,8 @@
   position: absolute;
 }
 
-.cabecalho-menu a:hover::after {
+.cabecalho-menu a:hover::after,
+.cabecalho-menu .ativo::after {
   width: 100%;
 }
 

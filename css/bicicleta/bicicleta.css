@@ -10,15 +10,13 @@
 
 .galeria {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   place-self: start;
   gap: 20px;
 }
 
-.galeria-sec {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+.galeria img:first-child {
+  grid-column: 1/-1;
 }
 
 .infos > p {

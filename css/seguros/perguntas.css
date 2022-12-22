@@ -11,13 +11,15 @@
   cursor: pointer;
 }
 
-.pergunta-cabecalho h3 {
+.pergunta-cabecalho button {
   display: flex;
   align-items: center;
   position: relative;
+  border: none;
+  background: none;
 }
 
-.pergunta-cabecalho h3::before {
+.pergunta-cabecalho button::before {
   content: "";
   display: inline-block;
   width: 12px;
@@ -31,12 +33,21 @@
   transition: 0.3s;
 }
 
-.pergunta-cabecalho:hover img {
+.pergunta-cabecalho:hover img,
+.pergunta-cabecalho button[aria-expanded="true"] img {
   transform: rotate(180deg);
 }
 
 .pergunta {
   padding: 24px 20px 24px 40px;
+}
+
+.js .pergunta p {
+  display: none;
+}
+
+.js .pergunta .expanded {
+  display: block;
 }
 
 .pergunta p {

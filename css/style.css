@@ -1,6 +1,7 @@
 @import "./utilitarios/componentes.css";
 @import "./utilitarios/cores.css";
 @import "./utilitarios/tipografia.css";
+@import "./utilitarios/animacao.css";
 
 @import "./global/global.css";
 @import "./global/header.css";
