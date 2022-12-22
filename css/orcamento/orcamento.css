@@ -1,0 +1,292 @@
+.orcamento-bg {
+  background: var(--cor-1);
+  box-shadow: inset 0 260px var(--cor-11);
+}
+
+.orcamento-formulario {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: 120px;
+}
+
+.orcamento-formulario p {
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.orcamento-formulario p::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 8px;
+  background: var(--cor-p1);
+  position: absolute;
+  left: -12px;
+}
+
+.formulario-produto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 20px;
+  padding: 60px;
+  background: var(--cor-12);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px 0 0 4px;
+}
+
+.formulario-produto > * {
+  grid-column: 1/-1;
+}
+
+#bikcraft + label,
+#seguro + label {
+  grid-column: initial;
+}
+
+.formulario-produto input {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.formulario-produto label {
+  display: inline-block;
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+  padding: 12px 16px;
+  border-radius: 4px;
+  background: var(--cor-10);
+  box-sizing: border-box;
+  border: 1px solid var(--cor-12);
+}
+
+.formulario-produto label:hover {
+  background: var(--cor-9);
+}
+
+.formulario-produto input:checked + label {
+  background: var(--cor-0);
+  color: var(--cor-11);
+}
+
+.formulario-produto input:focus + label {
+  box-shadow: 0 0 0 2px var(--cor-p1);
+}
+
+.formulario-produto input + label::before {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  width: 12px;
+  height: 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--cor-0);
+  border-radius: 6px;
+}
+
+.formulario-produto input:checked + label::before {
+  border-color: var(--cor-7);
+  box-shadow: inset 0 0 0 3px var(--cor-0), inset 0 0 0 6px var(--cor-7);
+}
+
+.formulario-produto-bikcraft,
+.formulario-produto-seguro {
+  display: none;
+}
+
+#bikcraft:checked ~ .formulario-produto-bikcraft,
+#seguro:checked ~ .formulario-produto-seguro {
+  display: block;
+}
+
+.formulario-produto-bikcraft > p,
+.formulario-produto-seguro > p {
+  margin-top: 20px;
+}
+
+.formulario-produto-bikcraft > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+  border-radius: 4px;
+  background: var(--cor-1);
+  margin: 20px 0;
+}
+
+.formulario-produto-bikcraft label,
+.formulario-produto-seguro label {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.formulario-produto-bikcraft span,
+.formulario-produto-seguro span {
+  display: none;
+}
+
+.formulario-produto-bikcraft input:checked + label span,
+.formulario-produto-seguro input:checked + label span {
+  display: inline-block;
+}
+
+.formulario-produto-bikcraft li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.formulario-produto-bikcraft li + li {
+  margin-top: 8px;
+}
+
+.formulario-produto-seguro > p {
+  margin-bottom: 20px;
+}
+
+.formulario-produto-bikcraft > div {
+  display: none;
+}
+
+#nimbus:checked ~ .bicicleta-nimbus,
+#magic:checked ~ .bicicleta-magic,
+#nebula:checked ~ .bicicleta-nebula {
+  display: grid;
+}
+
+.formulario-cliente {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background: var(--cor-0);
+  border-radius: 0 4px 4px 0;
+}
+
+.formulario-cliente p,
+.btn,
+.formulario-cliente div:nth-child(4),
+.formulario-cliente div:nth-child(5),
+.checkbox {
+  grid-column: 1/-1;
+}
+
+.formulario-cliente p:nth-child(6) {
+  margin-top: 20px;
+}
+
+.formulario-cliente label {
+  display: block;
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+  margin-bottom: 4px;
+}
+
+.formulario-cliente input {
+  width: 100%;
+  height: 48px;
+  outline: none;
+  box-sizing: border-box;
+  background: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  border-radius: 4px;
+  padding-left: 12px;
+}
+
+.formulario-cliente input:focus {
+  border-color: var(--cor-p1);
+  background: var(--cor-0);
+  box-shadow: 0 0 0 2px #fea;
+}
+
+.formulario-cliente input::placeholder {
+  font: 400 1rem/1 "Poppins", sans-serif;
+}
+
+.checkbox input {
+  padding: 0;
+  width: max-content;
+  height: auto;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox input,
+.checkbox label {
+  display: inline-block;
+}
+
+.checkbox a {
+  position: relative;
+}
+
+.checkbox a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--cor-12);
+  position: absolute;
+  top: 19px;
+  left: 0;
+}
+
+@media (max-width: 1200px) {
+  .formulario-produto,
+  .formulario-cliente {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .orcamento-formulario {
+    grid-template-columns: 1fr;
+    padding-bottom: 60px;
+  }
+
+  .orcamento-bg {
+    box-shadow: inset 0 390px var(--cor-11);
+  }
+
+  .formulario-cliente {
+    border-radius: 0 0 4px 4px;
+  }
+
+  .formulario-produto {
+    border-radius: 4px 4px 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .formulario-cliente {
+    grid-template-columns: 1fr;
+    border-radius: 0 0 4px 4px;
+  }
+
+  .formulario-produto {
+    border-radius: 4px 4px 0 0;
+  }
+
+  .btn {
+    white-space: inherit;
+  }
+}
+
+@media (max-width: 400px) {
+  .formulario-produto {
+    grid-template-columns: 1fr;
+  }
+
+  .checkbox input,
+  .checkbox label {
+    display: inline-block;
+  }
+
+  .checkbox {
+    max-width: 18ch;
+  }
+}
